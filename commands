@@ -1,7 +1,0 @@
-net localgroup administrators
-
-start-process powershell –verb runAs
-
-powershell "start-process powershell -verb runas"
-
-([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`[Security.Principal.WindowsBuiltInRole] “Administrator”)
